@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hw11-rest-api"
+version = "0.1.0"
+description = ""
+authors = ["Anatolii6974 <anatolii.perfilov@gmail.com>"]
+readme = "README.md"
+packages = [{include = "hw11_rest_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.0"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+sqlalchemy = "^2.0.22"
+psycopg2 = "^2.9.9"
+alembic = "^1.12.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[virtualenvs] 
+in-project = true
